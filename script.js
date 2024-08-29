@@ -9,6 +9,16 @@ console.log(val+4/2*3);
 
 })
 
+const elem = document.querySelector('#colors');
+elem.forEach((elem)=>{
+  elem.style.color='blue';
+})
+
+const elements = document.querySelectorAll('.heading');
+elements.forEach((element) => {
+  element.style.color = 'blue';
+});
+
 //this is called spread opertaor 
 
 if(data.length == 13){
@@ -25,3 +35,13 @@ for(let  i = 0 ; i <= 13 ; i ++){
   
 }
 
+const prop=()=>{
+  return "i ma prop"
+}
+
+const v2 = ['khan',32,32,'loop',[3232,3232,32],(prop)];
+
+v2.forEach((elem,index)=>{
+    console.log(elem);
+    
+})
